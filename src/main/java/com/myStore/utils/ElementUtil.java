@@ -16,7 +16,16 @@ public class ElementUtil implements ElementUtilInterface {
 	
 	@Override
 	public String getPageTitle(WebDriver driver) {
-		return driver.getTitle();
+		try {
+			System.out.println("Getting Page title");
+			return driver.getTitle();
+			
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+			return null;
+		}
+		
 		
 	}
 	
@@ -153,6 +162,19 @@ public class ElementUtil implements ElementUtilInterface {
 			return false;
 		}
 	
+	}
+
+	@Override
+	public String getPageURL(WebDriver driver) {
+
+		try {
+			System.out.println("Getting current URL");
+			return driver.getCurrentUrl();
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+			return null;
+		}
 	}
 	
 	

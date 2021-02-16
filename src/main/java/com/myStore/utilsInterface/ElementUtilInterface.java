@@ -68,4 +68,13 @@ public interface ElementUtilInterface {
 	 * @param webelement
 	 * @return boolean
 	 */
+	
+	
+	public String getPageURL(WebDriver driver);
+	/**
+	 * This method returns current URL of the page
+	 * @author sumitshivhare
+	 * @param webelement
+	 * @return boolean
+	 */
 }
