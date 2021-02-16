@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="MyStore">
+  <test name="IndexPagetest">
+  <parameter name="browser" value="chrome" />
+    <classes>
+      <class name="com.myStore.testCases.IndexPageTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
